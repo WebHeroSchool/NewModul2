@@ -1,8 +1,31 @@
+body{
+	margin: 0;
+}
+.wrapper{
+  width: 80%;
+  margin: auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.main-section{
+  
+}
 .logo{
   font-family: 'PT Serif', serif;
+  padding: 40px 0;
 }
 .navigation{
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+}
+.navigation__item{
+  padding: 0 13px;
+}
+.navigation__item:last-child{
+  padding: 0;
 }
 .main-content__title{
   font-family: 'PT Serif', serif;
