@@ -8,31 +8,101 @@ body{
 .header{
   display: flex;
   justify-content: space-between;
-}
-.main-section{
-  
+  margin-bottom: 100px;
 }
 .logo{
-  font-family: 'PT Serif', serif;
+  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
   padding: 40px 0;
+  padding-left: 44px;
+  position: relative;
+}
+.logo__circle{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .7;
+}
+.logo__circle_color_blue{
+  left: 8px;
+  top: 56%;
+  background: #c8dbfb;
+  border-radius: 50%;
+}
+.logo__circle_color_dark-blue{
+  background: #0056ec;
+  border-radius: 50%;
 }
 .navigation{
-  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
 }
 .navigation__item{
-  padding: 0 13px;
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+.navigation__item:hover{
+  color: #0056ec;
+  animation: bounce 1s;
+  opacity: .5;
+}
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+    transform: translateY(0);
+	}
+  40% {
+  transform: translateY(-20px);
+    transform: translateY(-20px);
+	}
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+	}
+}
+.navigation__item_active:hover:after{
+  display: block;
+  content: '';
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #0056ec;
+  position: absolute;
 }
 .navigation__item:last-child{
-  padding: 0;
+  margin-right: 0;
 }
-.main-content__title{
-  font-family: 'PT Serif', serif;
+.main{
+  padding: 0 63% 200px 0;
+  background:top right no-repeat url(img/mainImg.svg);
 }
-.main-content__text{
-  font-family: 'Roboto', sans-serif;
+.main__title{
+  margin-bottom: 0 0 40px 0;
+  font: 700 50px/65px pt_serif, arial, helvetica, sans-serif;
+  color: #000;
 }
-.main-content__button{
-  font-family: 'Roboto', sans-serif;
+.main__title-text_highlight{
+	background: #ecf3ff;
+}
+.main__text{
+  margin: 0 0 41px 0;
+  font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+}
+.main__button{
+  font-family: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+  padding: 14px 16px;
+  background: #0056ec;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s; 
+}
+.main__button:hover{
+  opacity: .5;
 }
