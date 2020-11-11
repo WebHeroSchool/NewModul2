@@ -176,7 +176,7 @@ body {
     margin: 0 0 55px 0;
     font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
   }
-  
+
   .main__button {
     font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
     padding: 14px 21px;
@@ -305,9 +305,9 @@ body {
   .main {
     padding: 46px 50% 100px 0;
     background: top 32px right no-repeat url(img/mainImg375.svg);
-  } 
+  }
 
-  .main__title{
+  .main__title {
     margin: 0 0 40px 0;
     font: 700 30px/40px pt_serifbold, arial, helvetica, sans-serif;
   }
@@ -404,7 +404,7 @@ body {
     display: none;
   }
 
-  .header{
+  .header {
     margin-bottom: 31px;
   }
 
