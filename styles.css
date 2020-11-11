@@ -159,14 +159,14 @@ body {
 
   .navigation__item:last-child {
     margin-right: 4px;
-}
+  }
 
   .main {
     padding: 46px 50% 100px 0;
     background: top 32px right no-repeat url(img/mainImg1366.svg);
-  } 
+  }
   
-  .main__title{
+  .main__title {
     margin: 0 0 40px 0;
     font: 700 50px/66px pt_serifbold, arial, helvetica, sans-serif;
   }
@@ -193,7 +193,7 @@ body {
     margin-right: 26px;
   }
 
-  .header{
+  .header {
     margin-bottom: 51px;
   }
 
