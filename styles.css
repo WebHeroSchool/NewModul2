@@ -61,12 +61,12 @@ body {
   font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
-  transition: opacity .5s;
+  transition: opacity 1.5s;
 }
 
 .navigation__item:hover {
   color: #0056ec;
-  animation: bounce 1s;
+  animation: bounce 1.5s;
   opacity: .5;
 }
 
@@ -132,11 +132,22 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
-  transition: opacity .5s;
+  animation: pulsate 3s linear infinite;
 }
 
-.main__button:hover {
-  opacity: .5;
+@keyframes pulsate {
+  0% {
+    color: #bde1f1;
+    text-shadow: 0 -1px 0 #bde1f1;
+  }
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px 0 #bde1f1, 0 0 5px #ffd, 0 0 8px #fff;
+  }
+  100% {
+    color: #bde1f1;
+    text-shadow: 0 -1px 0 #bde1f1;
+  }
 }
 
 @media (max-width: 1500px) and (min-width: 1306px) {
