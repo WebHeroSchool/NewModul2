@@ -318,7 +318,7 @@ body {
 
   .navigation__item_active::after {
     width: 0%;
-}
+  }
 
   .header {
     margin-bottom: 51px;
@@ -427,7 +427,7 @@ body {
   }
 
   .header {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .main {
