@@ -105,12 +105,12 @@ body {
 }
 
 .main {
-  padding: 74px 63% 200px 0;
+  padding: 75px 63% 200px 0;
   background: top right no-repeat url(img/mainImg.svg);
 }
 
 .main__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 38px 0;
   font: 700 66px/87px pt_serifbold, arial, helvetica, sans-serif;
   color: #000;
 }
@@ -120,14 +120,14 @@ body {
 }
 
 .main__text {
-  max-width: 450px;
-  margin: 0 0 55px 0;
+  max-width: 425px;
+  margin: 0 0 57px 0;
   font: 400 22px/26px 'Roboto', arial, helvetica, sans-serif;
 }
 
 .main__button {
   font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
-  padding: 19px 30px;
+  padding: 17px 30px;
   background: #0056ec;
   color: #fff;
   text-decoration: none;
@@ -180,7 +180,7 @@ body {
   }
 
   .main {
-    padding: 46px 50% 100px 0;
+    padding: 50px 50% 100px 0;
     background: top 32px right no-repeat url(img/mainImg1366.svg);
   }
 
@@ -191,7 +191,7 @@ body {
 
   .main__text {
     max-width: 356px;
-    margin: 0 0 55px 0;
+    margin: 0 0 52px 0;
     font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
   }
 
@@ -224,8 +224,8 @@ body {
   }
 
   .main {
-    padding: 46px 50% 100px 0;
-    background: top 32px right no-repeat url(img/mainImg1024.svg);
+    padding: 49px 54% 100px 0;
+    background: top 33px right no-repeat url(img/mainImg1024.svg);
   }
 
   .main__title {
@@ -234,8 +234,8 @@ body {
   }
 
   .main__text {
-    max-width: 356px;
-    margin: 0 0 55px 0;
+    max-width: 354px;
+    margin: 0 0 52px 0;
     font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
   }
 
@@ -264,7 +264,7 @@ body {
   .burger {
     display: block;
     position: relative;
-    margin: 27px 23px 0 0;
+    margin: 28px 0 0 0;
     z-index: 20;
   }
 
@@ -277,13 +277,13 @@ body {
     padding-bottom: 4px;
   }
 
-  #checkbox:checked ~ label .burger::before {
+  #checkbox:checked ~ .burger::before {
     position: relative;
     transform: rotate(45deg);
     top: 7px;
   }
 
-  #checkbox:checked ~ label .burger::after {
+  #checkbox:checked ~ .burger::after {
     position: relative;
     transform: rotate(-45deg);
     top: -4px;
@@ -315,6 +315,10 @@ body {
     padding-bottom: 24px;
     width: auto;
   }
+
+  .navigation__item_active::after {
+    width: 0%;
+}
 
   .header {
     margin-bottom: 51px;
@@ -375,13 +379,13 @@ body {
     padding-bottom: 4px;
   }
 
-  #checkbox:checked ~ label .burger::before {
+  #checkbox:checked ~ .burger::before {
     position: relative;
     transform: rotate(45deg);
     top: 7px;
   }
 
-  #checkbox:checked ~ label .burger::after {
+  #checkbox:checked ~ .burger::after {
     position: relative;
     transform: rotate(-45deg);
     top: -4px;
@@ -423,14 +427,14 @@ body {
   }
 
   .header {
-    margin-bottom: 31px;
+    margin-bottom: 0px;
   }
 
   .main {
     text-align: center;
-    padding: 73% 0 0 0;
+    padding: 82% 0 0 0;
     background-size: 85%;
-    background-position: top -9% center;
+    background-position: top 2% center;
   }
 
   .main__title {
@@ -441,7 +445,7 @@ body {
   }
 
   .main__text {
-    max-width: 260px;
+    max-width: 258px;
     margin: 0 auto 38px auto;
     font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
     text-align: center;
@@ -486,13 +490,13 @@ body {
     padding-bottom: 4px;
   }
 
-  #checkbox:checked ~ label .burger::before {
+  #checkbox:checked ~ .burger::before {
     position: relative;
     transform: rotate(45deg);
     top: 7px;
   }
 
-  #checkbox:checked ~ label .burger::after {
+  #checkbox:checked ~ .burger::after {
     position: relative;
     transform: rotate(-45deg);
     top: -4px;
